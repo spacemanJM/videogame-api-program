@@ -1,0 +1,145 @@
+:root {
+    --clr-1: #052b2f;
+    --clr-2: #073438;
+    --clr-3: #0e4b50;
+    --clr-4: #3d8f85;
+    --clr-5: #637c54;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--clr-2);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gameForm {
+    margin: 5px;
+}
+.gameInput {
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid hsl(0, 0%, 20%, 0.3);
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+}
+button[type="submit"] {
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: hsl(122, 39%, 50%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#clearInput {
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    background-color: hsl(9, 100%, 50%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#clearInput:hover {
+    background-color: hsl(9, 100%, 40%);
+}
+#clearInput:active {
+    background-color: hsl(9, 100%, 60%);
+}
+button[type="submit"]:hover {
+    background-color: hsl(122, 39%, 40%);    
+}
+button[type="submit"]:active {
+    background-color: hsl(122, 39%, 60%);    
+}
+.card {
+    position: relative;
+    background: linear-gradient(180deg, hsl(0, 0%, 20%), hsl(0, 0%, 50%));
+    padding: 10px 25px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.75);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gameImageDisplay {
+    box-shadow: 0px 0px 15px 5px hsla(0, 0%, 100%, 0.8);
+    max-width: 70%;
+    max-height: 300px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.gameNameDisplay {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.releaseDateDisplay {
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+.ratingDisplay {
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+.publisherDisplay {
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+.genreDisplay {
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+.platformDisplay {
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+.esrbDisplay {
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+.developerDisplay {
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+.errorDisplay {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.imageButtons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: hsl(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.imageButtons:hover {
+    background-color: hsl(0, 0%, 0%, 0.7);
+}
+.imageButtons:active {
+    background-color: hsl(0, 0%, 0%, 0.3);
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+p {
+    font-size: 1.5rem;
+}

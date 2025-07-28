@@ -37,7 +37,7 @@ gameForm.addEventListener("submit", async event => {
     Fetches again with the slug to find data for specific game user entered
 */
 async function fetchGameData(game) {
-    const apiUrl = `http://localhost:3000/api/games?search=${game}`;
+    const apiUrl = `https://videogame-api-program.onrender.com/api/games?search=${game}`;
     const response = await fetch(apiUrl);
 
     if(!response.ok) {
@@ -51,7 +51,7 @@ async function fetchGameData(game) {
     }
 
     const gameSlug = initialData.results[0].slug;
-    const slugUrl = `http://localhost:3000/api/games/${gameSlug}`;
+    const slugUrl = `https://videogame-api-program.onrender.com/api/games/${gameSlug}`;
     const detailedResponse = await fetch(slugUrl);
 
     if(!detailedResponse.ok) {

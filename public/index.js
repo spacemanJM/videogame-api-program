@@ -41,13 +41,13 @@ async function fetchGameData(game) {
     const response = await fetch(apiUrl);
 
     if(!response.ok) {
-        throw new Error("Could not fetch game list");
+        displayError("Could not fetch game list");
     }
 
     const initialData = await response.json();
 
     if(!initialData.results || initialData.results.length === 0) {
-        throw new Error("No games found");
+        displayError("No games found");
     }
 
     const gameSlug = initialData.results[0].slug;
@@ -55,7 +55,7 @@ async function fetchGameData(game) {
     const detailedResponse = await fetch(slugUrl);
 
     if(!detailedResponse.ok) {
-        throw new Error("Could not fetch game details");
+        displayError("Could not fetch specific game details");
     }
     return await detailedResponse.json();
 }
